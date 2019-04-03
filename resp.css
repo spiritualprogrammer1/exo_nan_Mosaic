@@ -1,0 +1,73 @@
+@media (max-width: 991.98px){
+    .bg_1 {
+        display: none;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        margin: 0;
+    }
+    .slide{
+        margin-top: 0;
+    }
+    .textContenu h1{
+        color: blue;
+    }
+    .textContenu p{
+        color: blue;
+    }
+    #slide1 .textContenu{
+        width: 100%;
+        margin: 0 auto;
+        background: url(bg_1.jpeg);
+        background-size: cover;
+    }
+    #slide2 .textContenu{
+        width: 100%;
+        margin: 0 auto;
+        background: url(bg_2.jpeg);
+        background-size: cover;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .navbar{
+        margin-top: 0;
+        
+    }
+   nav{
+        background-color: black;
+        height: 66px;
+    }
+    .titre{
+        color: white;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    .menu{
+        display: inline;
+        position: absolute;
+        color: white;
+        top: 5px;
+        right: 15px;
+   }
+    .menu:hover{
+        cursor: pointer;
+   }
+    .menu img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+
+

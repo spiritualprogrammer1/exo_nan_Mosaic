@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <span class="titre">Mosaic</span>
+        <span class="menu"><img src="menu.svg">Menu</span>
+        <ul class="navbar-nav">
+            <li class="navbar-item active">Home</li>
+            <li class="navbar-item">About</li>
+            <li class="navbar-item">Project</li>
+            <li class="navbar-item">Services</li>
+            <li class="navbar-item">Team</li>
+            <li class="navbar-item">Blog</li>
+            <li class="navbar-item">Contact</li>
+        </ul>
+    </nav>
+
+    <div class="narbar2">
+
+        <ul class="navbarcontain2">
+            <li class="">Home</li>
+            <li class="">About</li>
+            <li class="">Project</li>
+            <li class="">Services</li>
+            <li class="">Team</li>
+            <li class="">Blog</li>
+            <li class="">Contact</li>
+        </ul>
+
+    </div>
+    <div class="slide anim fadeOut"  id="s1">
+        <div class="slide-child " id="slide1" >
+            <div class="textContenu">
+                <h1>We Love <br>Modern Designs</h1>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="btn"><a href="" role="button">Voir nos travaux</a></p>
+                <div  class="bg_1" style="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide anim fadeOut" id="s2" style='display: none;'>
+        <div class="slide-child " id="slide2">
+            <div class="textContenu">
+                <h1>We Create Amazing <br> Architecture <br> Designs</h1>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="btn"><a href="" role="button">Voir nos travaux</a></p>
+                <div  class="bg_2" style="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
+<script src="jquery3-3-1.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".narbar2").hide();
+
+        $('.menu').on('click',function () {
+            $(".narbar2").toggle(200);
+        }) ;
+
+        setInterval(fade ,10000);
+        function fade() {
+            setTimeout(montre,4000);
+            function montre(){
+                $('#s1').hide(1000);
+                $('#s2').show(1000);
+                setTimeout(remontre,3000);
+                function remontre(){
+                    $('#s2').hide();
+                    $('#s1').show();
+                }
+            }
+        }
+
+        /* setInterval(al,1000);
+     function al(){
+        alert('null');
+     }*/
+
+    });
+
+
+</script>
